@@ -1,13 +1,10 @@
 {
-  "name": "gohang",
+  "name": "gohang-client",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "client": "vite serve --mode dev",
-    "build": "vite build",
-    "lint": "vue-cli-service lint",
-    "server": "node --inspect-port=8888 ./src/server/server.js",
-    "dev": "concurrently \"npm run client\" \"npm run server\""
+    "build": "vite build"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
@@ -16,10 +13,7 @@
     "concurrently": "^7.1.0",
     "core-js": "^3.6.5",
     "dotenv": "^16.0.0",
-    "express": "^4.17.3",
-    "express-ws": "^5.0.2",
     "fs": "0.0.1-security",
-    "uuid": "^8.3.2",
     "vite": "^2.9.5",
     "vue": "^3.0.0",
     "vue-router": "^4.0.14"
