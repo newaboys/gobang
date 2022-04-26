@@ -1,4 +1,4 @@
-# vue3 + vite + node-v16.13.1 client
+# vue3 + vite + node-v16.13.1 server
 
 ## Project setup
 ```
