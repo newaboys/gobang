@@ -6,7 +6,7 @@ import { resolve } from 'path'
 export default ({mode}) => {
   let env = loadEnv(mode, process.cwd());
   return defineConfig({
-    base:"/",
+    base:"./",
     plugins: [
       vue(),
       createSvg('./src/icons/svg/')
@@ -22,6 +22,9 @@ export default ({mode}) => {
       alias:{
         '@': resolve(__dirname, ".", "src")
       }
+    },
+    build:{
+      sourcemap:true
     }
   })
 }

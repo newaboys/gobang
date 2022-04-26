@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "client": "vite serve --mode dev",
-    "build": "vue-cli-service build",
+    "build": "vite build",
     "lint": "vue-cli-service lint",
     "server": "node --inspect-port=8888 ./src/server/server.js",
     "dev": "concurrently \"npm run client\" \"npm run server\""

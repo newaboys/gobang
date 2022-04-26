@@ -12,19 +12,21 @@
     </div>
 </template>
 <script lang="ts">
-    import { defineComponent, reactive,getCurrentInstance  } from 'vue';
+    import { defineComponent, reactive  } from 'vue';
+    import { useRouter } from 'vue-router';
     export default defineComponent({
         setup() {
-            const {ctx} = getCurrentInstance();
+            const router = useRouter();
             const formState = reactive({
                 name:"",
                 placeholder:"输入名称"
             });
 
 
-            const battle = async (vals:any)=>{
+            const battle = (vals:any)=>{
                 if(!formState.name) return;
-                let bb = await ctx.$root.$router.push({name:"hall",query:{playerName:formState.name}});
+                debugger;
+                router.push({name:"hall",query:{playerName:formState.name}});
             }
             return {
                 formState,
