@@ -1,7 +1,7 @@
 ###生产环境配置
 NODE_ENV=dev
 
-##客户端端口
+##客户端端口1
 VITE_CLIENT_HOST=127.0.0.1
 VITE_CLIENT_PORT=8080
 
