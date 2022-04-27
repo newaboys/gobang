@@ -11,6 +11,6 @@ app.ws("/"+process.env.VITE_WEBSOCKET_SUFFIX, function (ws, req){
         wsMap.msgDispatcher(ws,msg);
     });
 });
-app.listen(process.env.VITE_WEBSOCKET_PORT, function () {
-    console.log('Example app listening on port '+process.env.VITE_WEBSOCKET_PORT+'!');
+app.listen(process.env.VITE_SERVER_PORT, function () {
+    console.log('app listening on port '+process.env.VITE_SERVER_PORT+'!');
 });

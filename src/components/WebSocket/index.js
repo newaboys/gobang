@@ -27,7 +27,7 @@ export default function(){
         getUUID:function(){
         },
         init:function(ops){
-            ws = new WebSocket("ws://"+env.VITE_WEBSOCKET_HOST+":"+env.VITE_WEBSOCKET_PORT+"/"+env.VITE_WEBSOCKET_SUFFIX);
+            ws = new WebSocket("ws://"+env.VITE_WEBSOCKET_HOST+":"+env.VITE_SERVER_PORT+"/"+env.VITE_WEBSOCKET_SUFFIX);
             ws.onclose = this.onClose;
             ws.onerror = this.onError;
             ws.onmessage= ops.onMessage||this.onMessage;
